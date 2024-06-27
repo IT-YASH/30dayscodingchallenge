@@ -1,0 +1,98 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+}
+
+.dark-mode {
+    --background-color: #121212;
+    --text-color: #ffffff;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    max-width: 400px;
+}
+
+.toggle-btn {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s;
+}
+
+.toggle-btn .toggle-thumb {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    transition: left 0.3s;
+}
+
+.toggle-btn .sun-icon,
+.toggle-btn .moon-icon {
+    position: absolute;
+    font-size: 1.5rem;
+    transition: opacity 0.3s;
+}
+
+.toggle-btn .sun-icon {
+    left: 10px;
+}
+
+.toggle-btn .moon-icon {
+    right: 10px;
+    opacity: 0;
+}
+
+body.dark-mode .toggle-btn {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .toggle-btn .toggle-thumb {
+    left: 55px;
+}
+
+body.dark-mode .toggle-btn .sun-icon {
+    opacity: 0;
+}
+
+body.dark-mode .toggle-btn .moon-icon {
+    opacity: 1;
+}
