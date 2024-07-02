@@ -24,13 +24,13 @@ body {
 }
 
 #searchInput {
-    width: calc(100% - 30px);
+    width: 100%;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-right: 30px;
+    padding-right: 30px; /* Make space for the clear button */
 }
 
 .clear-btn {
@@ -41,6 +41,7 @@ body {
     cursor: pointer;
     font-size: 20px;
     display: none;
+    color: #aaa;
 }
 
 .selected-options {
