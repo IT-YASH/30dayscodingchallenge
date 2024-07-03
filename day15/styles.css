@@ -1,84 +1,84 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
-    text-align: center;
+  text-align: center;
 }
 
 .custom-select-container {
-    position: relative;
-    width: 300px;
-    margin-top: 20px;
+  position: relative;
+  width: 300px;
+  margin-top: 20px;
 }
 
 .select-box {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 
 #searchInput {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    padding-right: 30px; /* Make space for the clear button */
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding-right: 30px; /* Make space for the clear button */
 }
 
 .clear-btn {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    font-size: 20px;
-    display: none;
-    color: #aaa;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+  display: none;
+  color: #aaa;
 }
 
 .selected-options {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 .selected-options .selected-option {
-    background-color: #d4edda;
-    color: #155724;
-    border: 1px solid #c3e6cb;
-    border-radius: 4px;
-    padding: 5px 10px;
-    margin: 2px;
-    cursor: pointer;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin: 2px;
+  cursor: pointer;
 }
 
 .options-container {
-    position: absolute;
-    top: 40px;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-top: none;
-    background-color: #fff;
-    border-radius: 0 0 4px 4px;
-    max-height: 150px;
-    overflow-y: auto;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    display: none;
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: #fff;
+  border-radius: 0 0 4px 4px;
+  max-height: 150px;
+  overflow-y: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: none;
 }
 
 .option {
-    padding: 10px;
-    cursor: pointer;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .option:hover {
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
