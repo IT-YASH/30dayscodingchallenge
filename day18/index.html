@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 18: Image Gallery with Lightbox and Zoom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="images/avengers.jpg" alt="Avengers">
+        </div>
+        <div class="gallery-item">
+            <img src="images/ironman.jpg" alt="Iron Man">
+        </div>
+        <div class="gallery-item">
+            <img src="images/ironman2.jpg" alt="Iron Man 2">
+        </div>
+        <div class="gallery-item">
+            <img src="images/sky.jpg" alt="Sky">
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content">
+        <div class="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
