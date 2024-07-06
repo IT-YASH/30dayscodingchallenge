@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Tabs Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Beautiful Tabs Interface</h1>
+        <div class="tabs">
+            <button class="tablinks active" onclick="openTab(event, 'tab1')">Yash Patel</button>
+            <button class="tablinks" onclick="openTab(event, 'tab2')">Devansh Varia</button>
+            <button class="tablinks" onclick="openTab(event, 'tab3')">Rushabh Gandhi</button>
+        </div>
+        
+        <div id="tab1" class="tabcontent active">
+            <h2>Yash Patel</h2>
+            <p>Hello my name is Yash Patel.</p>
+        </div>
+        
+        <div id="tab2" class="tabcontent">
+            <h2>Devansh Varia</h2>
+            <p>Hello my name is Devansh Varia.</p>
+        </div>
+        
+        <div id="tab3" class="tabcontent">
+            <h2>Rushabh Gandhi</h2>
+            <p>Hello my name is Rushabh Gandhi</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
