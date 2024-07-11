@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Path Drawing Animation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>SVG Path Drawing Animation</h1>
+    <div class="svg-container">
+      <svg width="500" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+        <path id="y" d="M50 50 L75 100 L50 150 M75 100 L100 50" />
+        <path id="a" d="M150 150 L175 50 L200 150 M165 100 L185 100" />
+        <path id="s" d="M300 50 Q 300 70 260 90 Q 240 110 280 130 Q 320 150 280 170 Q 240 190 200 170" />
+        <path id="h" d="M350 50 L350 150 M350 100 L400 100 M400 50 L400 150" />
+      </svg>
+    </div>
+    <div class="buttons">
+      <button onclick="startAnimation()">Start Animation</button>
+      <button onclick="resetAnimation()">Reset Animation</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
