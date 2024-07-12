@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,56 +14,64 @@ body {
 
 h1 {
     margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
 }
 
 button {
-    padding: 10px 20px;
+    padding: 12px 24px;
     background-color: #3498db;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
     background-color: #2980b9;
+    transform: translateY(-2px);
 }
 
 .toast {
     display: none;
     position: fixed;
     bottom: 30px;
-    left: 50%;
+    left: 42%;
     transform: translateX(-50%);
     background-color: #333;
     color: white;
     padding: 15px 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
     animation: fadeInOut 5s forwards;
 }
 
 .toast-message {
-    margin-right: 10px;
+    margin-right: 20px;
+    font-size: 1em;
 }
 
 .toast-action {
     background: none;
     border: none;
     color: #3498db;
-    font-size: 16px;
+    font-size: 1em;
     cursor: pointer;
     padding: 0;
+    transition: color 0.3s ease;
 }
 
 .toast-action:hover {
+    color: orange;
     text-decoration: underline;
 }
 
 @keyframes fadeInOut {
-    0% { opacity: 0; }
-    10%, 90% { opacity: 1; }
-    100% { opacity: 0; }
+    0% { opacity: 0; transform: translateY(20px); }
+    10%, 90% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(20px); }
 }
