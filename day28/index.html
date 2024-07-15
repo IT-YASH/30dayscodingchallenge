@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Filter with Sorting and Pagination</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Content Filter with Sorting and Pagination</h1>
+        <div class="controls">
+            <select id="sort-by">
+                <option value="name">Sort by Name</option>
+                <option value="date">Sort by Date</option>
+            </select>
+            <input type="text" id="filter" placeholder="Filter by name...">
+        </div>
+        <ul id="content-list"></ul>
+        <div class="pagination">
+            <button id="prev-page"><i class="fas fa-chevron-left"></i></button>
+            <span id="page-info"></span>
+            <button id="next-page"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
