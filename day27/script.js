@@ -6,14 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const togglePasswordButton = document.getElementById('toggle-password');
     const togglePasswordIcon = togglePasswordButton.querySelector('i');
 
-    const strength = {
-        0: "Worst",
-        1: "Bad",
-        2: "Weak",
-        3: "Good",
-        4: "Strong"
-    };
-
     const passwordStrength = (password) => {
         let score = 0;
         if (password.length > 8) score++;
@@ -32,16 +24,15 @@ document.addEventListener('DOMContentLoaded', () => {
         return suggestions;
     };
 
-    passwordInput.addEventListener('input', () => {
-        const password = passwordInput.value;
+    const updateStrengthMeter = (password) => {
         const score = passwordStrength(password);
-
         strengthBar.style.width = `${(score + 1) * 25}%`;
-        strengthBar.style.backgroundColor = score < 2 ? 'red' : score < 3 ? 'orange' : score < 4 ? 'yellow' : 'green';
-
+        strengthBar.style.backgroundColor = ['red', 'orange', 'yellow', 'green'][score] || 'red';
         const suggestionList = getSuggestions(password);
-        suggestions.innerHTML = suggestionList.length > 0 ? `<ul>${suggestionList.map(item => `<li>${item}</li>`).join('')}</ul>` : 'Great password!';
-    });
+        suggestions.innerHTML = suggestionList.length ? `<ul>${suggestionList.map(item => `<li>${item}</li>`).join('')}</ul>` : 'Great password!';
+    };
+
+    passwordInput.addEventListener('input', () => updateStrengthMeter(passwordInput.value));
 
     togglePasswordButton.addEventListener('click', () => {
         const isPasswordVisible = passwordInput.type === 'text';

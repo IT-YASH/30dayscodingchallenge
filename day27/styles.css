@@ -10,17 +10,17 @@ body {
 
 .container {
   text-align: center;
-  background-color: #fff;
+  background-color: white;
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px black;
   max-width: 400px;
   width: 100%;
 }
 
 h1 {
   margin-bottom: 20px;
-  color: #333;
+  color: black;
 }
 
 .input-container {
