@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const defaultCoords = [22.2568307, 73.2161385]; 
+    const defaultCoords = [yourcordinates]; 
     const map = L.map('map').setView(defaultCoords, 13);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
