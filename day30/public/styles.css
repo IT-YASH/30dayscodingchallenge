@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-auth, .chat-container {
+    padding: 20px;
+}
+
+.user-auth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f5f7fa;
+}
+
+.user-auth input, .user-auth button {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-auth input {
+    background: #ffffff;
+}
+
+.user-auth button {
+    background: #4e54c8;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.user-auth button:hover {
+    background: #6c6efc;
+}
+
+.chat-container {
+    display: none;
+    flex-direction: row;
+    height: 500px;
+}
+
+.user-list {
+    width: 25%;
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+    background: #4e54c8;
+    color: #ffffff;
+}
+
+.user-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.user-list li {
+    padding: 10px;
+    border-bottom: 1px solid #666;
+}
+
+.chat-box {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #f5f7fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.messages .message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    max-width: 70%;
+}
+
+.messages .message.own {
+    background-color: #4e54c8;
+    color: #fff;
+    margin-left: auto;
+}
+
+.messages .message.other {
+    background-color: #ddd;
+    margin-right: auto;
+}
+
+.typing {
+    padding: 10px;
+    color: #888;
+}
+
+.input-container {
+    display: flex;
+    padding: 10px;
+    background: #fff;
+}
+
+#chat-input {
+    flex-grow: 1;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#send {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #4e54c8;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#send:hover {
+    background: #6c6efc;
+}
